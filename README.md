@@ -11,3 +11,13 @@ cd D:\MF-Agent
 
 # Run application (যখন প্রস্তুত হবে)
 .\.venv\Scripts\python.exe -m streamlit run ui\dashboard.py
+
+
+cd D:\MF-Agent
+
+git config --global user.name "alamgirfrombd"
+git config --global user.email "alamgirfrombd@gmail.com"
+
+git status
+git add .
+git commit -m "Update MF Agent infrastructure and project architecture"
