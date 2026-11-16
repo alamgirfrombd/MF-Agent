@@ -19,13 +19,20 @@ cd D:\MF-Agent
 cd D:\MF-Agent
 
 # Correct GitHub remote URL
-git remote set-url origin https://github.com/alamgirfrombd/MF-Agent.git
+                git remote set-url origin https://github.com/alamgirfrombd/MF-Agent.git
 
-# Verify remote
-git remote -v
+                # Verify remote
+                git remote -v
 
-# Push project
-git push -u origin main
+                # Push project
+                git push -u origin main
+
+                git add .
+                git commit -m "Update MF Agent"
+
+                git pushgit add .
+                git commit -m "Update MF Agent"
+                git push
 
 
 
