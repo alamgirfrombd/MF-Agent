@@ -1,0 +1,35 @@
+{
+  "registry_version": "1.0",
+  "dataset_id": "loan_disbursement",
+  "display_name": "Loan Disbursement",
+  "description": "ঋণ বিতরণ, বিতরণ তারিখ, বিতরণকৃত অর্থ এবং শাখাভিত্তিক বিশ্লেষণের জন্য starter registry.",
+  "status": "draft",
+  "database": "${SQL_DATABASE}",
+  "tables": [
+    {
+      "logical_name": "loan",
+      "sql_table": "dbo.LoanData",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate table from prior project context; verify its current schema.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    },
+    {
+      "logical_name": "branch",
+      "sql_table": "dbo.tblBranch",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate branch master table; verify its key and columns.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    }
+  ],
+  "business_rules": [],
+  "default_filters": [],
+  "approved_metrics": [],
+  "notes": [
+    "This is a starter registry. Confirm actual table and column names from SQL Server before enabling it.",
+    "Do not infer joins, keys, date fields, or amount fields until verified against the database schema."
+  ]
+}

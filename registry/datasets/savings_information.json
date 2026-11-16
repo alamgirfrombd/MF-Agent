@@ -1,0 +1,35 @@
+{
+  "registry_version": "1.0",
+  "dataset_id": "savings_information",
+  "display_name": "Savings Information",
+  "description": "সঞ্চয় হিসাব, জমা, উত্তোলন এবং স্থিতি বিশ্লেষণের জন্য starter registry.",
+  "status": "draft",
+  "database": "${SQL_DATABASE}",
+  "tables": [
+    {
+      "logical_name": "savings_candidate",
+      "sql_table": "",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Table not yet identified. Discover from SQL Server schema.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    },
+    {
+      "logical_name": "branch",
+      "sql_table": "dbo.tblBranch",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate branch master table; verify its key and columns.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    }
+  ],
+  "business_rules": [],
+  "default_filters": [],
+  "approved_metrics": [],
+  "notes": [
+    "This is a starter registry. Confirm actual table and column names from SQL Server before enabling it.",
+    "Do not infer joins, keys, date fields, or amount fields until verified against the database schema."
+  ]
+}

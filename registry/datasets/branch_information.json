@@ -1,0 +1,44 @@
+{
+  "registry_version": "1.0",
+  "dataset_id": "branch_information",
+  "display_name": "Branch Information",
+  "description": "শাখা, এলাকা, জোন এবং সাংগঠনিক কাঠামো বিশ্লেষণের জন্য starter registry.",
+  "status": "draft",
+  "database": "${SQL_DATABASE}",
+  "tables": [
+    {
+      "logical_name": "branch",
+      "sql_table": "dbo.tblBranch",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate branch master table.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    },
+    {
+      "logical_name": "branch_lines",
+      "sql_table": "dbo.tblBranchLines",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate table; verify its purpose and relationship.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    },
+    {
+      "logical_name": "area",
+      "sql_table": "dbo.tblArea",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate area master table; verify its key and columns.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    }
+  ],
+  "business_rules": [],
+  "default_filters": [],
+  "approved_metrics": [],
+  "notes": [
+    "This is a starter registry. Confirm actual table and column names from SQL Server before enabling it.",
+    "Do not infer joins, keys, date fields, or amount fields until verified against the database schema."
+  ]
+}

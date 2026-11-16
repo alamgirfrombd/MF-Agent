@@ -1,0 +1,35 @@
+{
+  "registry_version": "1.0",
+  "dataset_id": "member_information",
+  "display_name": "Member Information",
+  "description": "সদস্য পরিচিতি, সদস্য নম্বর, যোগদানের তারিখ এবং সদস্য-সম্পর্কিত বিশ্লেষণের জন্য starter registry.",
+  "status": "draft",
+  "database": "${SQL_DATABASE}",
+  "tables": [
+    {
+      "logical_name": "member",
+      "sql_table": "dbo.LoanData",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Candidate only; verify whether member master data is stored here or in a separate table.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    },
+    {
+      "logical_name": "branch",
+      "sql_table": "dbo.tblBranch",
+      "verification_status": "candidate_needs_schema_verification",
+      "description": "Known candidate branch master table; verify its key and columns.",
+      "primary_key": [],
+      "columns": [],
+      "relationships": []
+    }
+  ],
+  "business_rules": [],
+  "default_filters": [],
+  "approved_metrics": [],
+  "notes": [
+    "This is a starter registry. Confirm actual table and column names from SQL Server before enabling it.",
+    "Do not infer joins, keys, date fields, or amount fields until verified against the database schema."
+  ]
+}

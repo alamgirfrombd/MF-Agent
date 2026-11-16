@@ -1,0 +1,48 @@
+{
+  "registry_version": "1.0",
+  "registry_type": "master",
+  "description": "Master index of available MFI AI Agent datasets.",
+  "default_dataset": "loan_disbursement",
+  "datasets": [
+    {
+      "dataset_id": "loan_disbursement",
+      "path": "datasets/loan_disbursement.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "loan_collection",
+      "path": "datasets/loan_collection.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "member_information",
+      "path": "datasets/member_information.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "savings_information",
+      "path": "datasets/savings_information.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "branch_information",
+      "path": "datasets/branch_information.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "financial_statements",
+      "path": "datasets/financial_statements.json",
+      "status": "draft"
+    },
+    {
+      "dataset_id": "loan_officer_performance",
+      "path": "datasets/loan_officer_performance.json",
+      "status": "draft"
+    }
+  ],
+  "selection_policy": [
+    "Select a dataset based on the user's question and the verified dataset description.",
+    "If a required table, column, key, or relationship is not verified, request schema discovery or clarification.",
+    "Do not generate executable SQL using unverified table or column names."
+  ]
+}
